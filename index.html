@@ -1,0 +1,319 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>速战笔记术</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.28.1/react-bootstrap.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+<link rel="stylesheet" href="https://chankuang2008.github.io/kuang-style/css/kuang-style.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container">
+
+  <a class="navbar-brand" href="javascript:void(0)">速战笔记术</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navContent">
+  </div>
+
+</div>
+</nav>
+<div class="header-btm"></div>
+
+<div class="container">
+
+<div class="row">
+<div class="col-12 col-sm-3">
+
+<div class="body-container">
+  <h6>Category</h6>
+  <ul class="category-list">
+  <li><a href="#a1"> 概率学 </a></li>
+  <li><a href="#a2"> 芝加哥经济学 </a></li>
+  <li><a href="#a3"> 华尔街 </a></li>
+  <li><a href="#a4"> 港股市场 </a></li>
+  <li><a href="#a5"> 量化投资 </a></li>
+  <li><a href="#a6"> 量子物理学 </a></li>
+  <li><a href="#a7"> 营销学 </a></li>
+  <li><a href="#a8"> 德州扑克 </a></li>
+  <li><a href="#a9"> 写作创作 </a></li>
+  </ul>
+</div>
+
+</div>
+<div class="col-12 col-sm-9">
+
+<div id="a1" class="body-container">
+  <a href="javascript:void(0)" class="title"> 概率学 </a>
+<p><strong>概率论的常见错误：</strong></p>
+
+<ol>
+	<li>样本空间的范围大小（样本空间）</li>
+	<li>没指明意义的平均数（样本分布）</li>
+	<li>如发生概率极低，如果本身就毫无意义（黑天鹅/小概率原则）</li>
+	<li>相关性数据的错误（因果论）</li>
+	<li>时间空间的错误（已改变的环境/基数）</li>
+	<li>样本的真伪性（来自人性的欺诈）</li>
+	<li>数据样本的独立性错误（偷换概念）</li>
+</ol>
+
+<p><strong>检验样本空间的4个维度：</strong></p>
+
+<ol>
+	<li>时间跨度</li>
+	<li>大环境&amp;基数</li>
+	<li>数据的发生频率</li>
+	<li>相似性/因果性</li>
+</ol>
+
+<p><strong>数据样本的分布特征：</strong></p>
+
+<ol>
+	<li>方差 variance dispersion：平方和</li>
+	<li>标准差 standard deviation：均方差，数据样本波动率</li>
+	<li>标准误差 Standard Error of the Mean，SEM：均值波动率</li>
+	<li>偏度系数 skewness</li>
+	<li>峰度系数 kurtosis</li>
+	<li>四分位数 quartile</li>
+	<li>众数 mode</li>
+	<li>中位数 median</li>
+	<li>离散分布 discrete probability distribution</li>
+	<li>连续分布 continuous probability distribution</li>
+</ol>
+
+<p><strong>区间估计 confidence intervals</strong></p>
+
+<ol>
+	<li>置信区间，置信上限，置信下限</li>
+	<li>置信度（置信水平）</li>
+	<li>接受域</li>
+	<li>拒绝域</li>
+	<li>显着性水平</li>
+</ol>
+
+<p><strong>检验方法：</strong></p>
+
+<ol>
+	<li>双侧假设检验 two-sided test</li>
+	<li>右边检测，左边检测 one-sided test</li>
+</ol>
+
+<p><strong>信息熵 information entropy：</strong></p>
+
+<ol>
+	<li>定类变量</li>
+	<li>定序变量</li>
+	<li>定距变量</li>
+	<li>定比变量</li>
+</ol>
+
+<p><strong>概率学理论</strong></p>
+
+<ol>
+	<li>全概率公式 law of total probability：测量可分割的样本空间</li>
+	<li>互独立事件independent event</li>
+	<li>互斥事件 exclusive event</li>
+	<li>密度函数 probablity density function，PDF</li>
+	<li>分布函数 cumulative distribution function，CDF</li>
+</ol>
+
+</div>
+
+<div id="a2" class="body-container">
+  <a href="javascript:void(0)" class="title"> 芝加哥经济学 </a>
+<p><span style="font-size:18px"><strong>系统1</strong></span>：快思考，冲动、凭直觉的。不善质疑，易骗，偏见。<br />
+<span style="font-size:18px"><strong>系统2</strong></span>：慢思考，算术，推理能力。懒惰，擅谁职守。</p>
+
+<p><span style="font-size:18px"><strong>系统1与系统2的联合错误决策：</strong></span></p>
+
+<ol>
+	<li><strong>系统1快速地编了一个故事</strong>，从而预计未来有可能发生的事。然而，这虽然简单快捷，但往往都是主观且未经证实的结论，多数是错误的。但是基于启动效应，系统2当刻是没法意识是错误的，并选择相信系统1。</li>
+	<li><strong>启动效应</strong>：系统1编了一个故事，而系统2也相信了这个故事。如：因果关系，病毒引致感冒。而宝洁清毒液能消灭90%试管里的病毒，因此宝凉消毒液能减少感冒。</li>
+	<li><strong>目标问题</strong>：想要作出的评估。</li>
+	<li><strong>启发式问题</strong>：绕开原来的问题，去回答的那个更简单的问题。</li>
+	<li><strong>情感启发问题</strong>：根据系统1的个人喜好，作出带有偏见的回答。而系统2也被欺骗。</li>
+</ol>
+
+<p><span style="font-size:18px"><strong>联想原则：</strong></span></p>
+
+<ol>
+	<li>相似性</li>
+	<li>时空相接</li>
+	<li>因果关系</li>
+</ol>
+
+<p><strong><span style="font-size:18px">芝加哥新派经济理论：</span></strong></p>
+
+<ol>
+	<li>前景理论 prospect theory：面对损失时是风险喜好。面对盈利时是风险规避。</li>
+	<li>损失厌恶：即使同等金额，对失去的厌恶程度，远大于你对得到的喜欢程度。</li>
+	<li>锚点效应 Anchoring effect：被第一个信息影响。第一印象。</li>
+	<li>过度自信：因过度关注，坠入窄框架思考，错误地提高权重，最终过度自信。系统1欺骗了系统2，而系统2又懒，没检验正确性。</li>
+	<li>框架效应：参考点（收益结果，损失结果）不同，选择不一样。</li>
+	<li>忽略比率：眼见即为事实，没考虑基础比率。是过度自信的结果。原因是过度关注的环境。</li>
+	<li>心理账户：即使同等金额，在不同的帐户，价值是不一样。</li>
+	<li>稟赋效应：不是一成不变，而是随着参照点而变化。如已拥有和未拥有。自己拥有和他人拥有。即使同一件物件，但因稟赋而有不同价值。</li>
+	<li>光晕效应：小概率事件，通过有限的几次观察得出的结果。</li>
+	<li>羊群效应：略。</li>
+</ol>
+
+<p><strong>解决方法：</strong></p>
+
+<ol>
+	<li>统计性思维：根据事物的不同类别和总体性质得出个案的结论。</li>
+	<li>只考虑最关键的因素/维度</li>
+	<li>通过负面例子接近真相</li>
+	<li>证伪论证</li>
+</ol>
+
+<p><span style="font-size:18px"><strong>过度关注的环境，导致错误决策：</strong></span><br />
+a. 过多关注：<br />
+如：［思考，快与慢］精神科医生觉得世界上多数人都有心理疾病。因为他每天接触的人，多数都是心理病的病人。<br />
+如：［黑天鹅］信息愈多，噪音愈多，假设愈多，错误愈大。<br />
+b. 生动画面：<br />
+如：［漫步华尔街］分析师的买入和持有建议。<br />
+c. 具体表述：1000中的1个。0.1%。<br />
+d. 明确提醒：</p>
+
+<p><strong><span style="font-size:18px">人性的错误：</span></strong><br />
+系统1具备主观，偏见，直觉。喜欢简化，寻找相似性，概括原因。但过度简化的结论往往是错误。因为做2个毫不相关的事情，最终都会遵从回归定律，各自趋于均值。<br />
+决小风险的能力有一个基本限度。要么完全忽视风险，要么过于重视风险，没有中间地带。</p>
+
+<p><strong><span style="font-size:18px">数学的错误：</span></strong><br />
+频率格式 frequency format，如百分比，均数，常数，中位数，收益角度，损失角度。只显示单个信息，都是带有欺骗性。<br />
+沉默的数据：不再存在的证据/ 基于人性的欺诈数据<br />
+如：［黑天鹅］执政党的目的是不出错，而不是令事情有进步。因此，任何数据都可能是假伪。</p>
+
+<p><strong><span style="font-size:18px">对随机事件作出因果解释：</span></strong><br />
+根据大数定律，只要样本空间足够大，数据样本足够多，任何事物最终会回归均值。<br />
+而从短期概率来看，尽管是随机数，但与历史有重覆的概率，是小概率事件。即有机会发生。<br />
+因此，像量子物理学，即使不知道因果解释，但寻找到当中规律，以概率函数来描述其状态，已经足够战胜股票市场。</p>
+
+</div>
+
+<div id="a3" class="body-container">
+  <a href="javascript:void(0)" class="title"> 华尔街 </a>
+<p><span style="font-size:18px"><strong>资产估值：</strong></span><br />
+坚实基础理论（firmfoundation theory）<br />
+空中楼阁理论（castle-in-the-air theory）/ 博傻理论 greater fool theory</p>
+
+<ol>
+	<li>贝塔值：股票的变动，与市场整体的变动做一个比较。</li>
+	<li>系统风险：即市场风险，记录了股票对市场整体波动率。</li>
+	<li>非系统风险：由特定公司的特有因素，所引起的股票价格的变动性。</li>
+</ol>
+
+<p><span style="font-size:18px"><strong>［漫步华尔街］综合使用基本面和技术面：</strong></span></p>
+
+<ol>
+	<li>只买入盈利增长预期能连续五年以上超过平均水平的公司。</li>
+	<li>千万不能为一只股票付出超过其坚实基础价值的价格。</li>
+	<li>寻找投资者可在其预期增长故事之上建立空中楼阁的股票。而空中楼阁是基于坚实理论。另外，自己的兴趣无关重要。最重要是预期大家喜欢什么故事，最终所形成的普通观点。</li>
+	<li>尽可能少交易。</li>
+</ol>
+
+<p><span style="font-size:18px"><strong>股票估值（内在价值）：</strong></span></p>
+
+<ol>
+	<li>股息收益率：股息，但现在是股价的上升空间。</li>
+	<li>每股收益率：盈利/利润成长性。</li>
+	<li>市盈率：股价和盈利同时上升。</li>
+</ol>
+
+<p><strong><span style="font-size:18px">债劵估值：</span></strong></p>
+
+<ol>
+	<li>到期收益率</li>
+	<li>市场利率/债券收益率</li>
+</ol>
+
+<p><span style="font-size:18px"><strong>周期性行业轮动：</strong></span></p>
+
+<ol>
+	<li>复苏：消费股，如汽车、家电、家具、工程机械、证券保险</li>
+	<li>繁荣：资源股，如大宗能源、有色、煤炭、黄金</li>
+	<li>滞涨：能源股：石油、天然气、食品饮料</li>
+	<li>衰退：医药、公用事业</li>
+</ol>
+
+<p><strong><span style="font-size:18px">财务指标：</span></strong></p>
+
+<ol>
+	<li>收入</li>
+	<li>毛利率</li>
+	<li>应收账款</li>
+	<li>净利润</li>
+</ol>
+
+<p><strong><span style="font-size:18px">CAN SLIM法则：</span></strong><br />
+C：可观或者加速增长的当季每股收益和每股销售收入<br />
+A：年度收益增长率：寻找收益大牛<br />
+N：新公司、新产品、新管理层、股价新高<br />
+S：二供给与需求：关键点上的大量需求<br />
+L：二领军股或拖油瓶：孰优孰劣<br />
+I：机构认同度<br />
+M：市场趋势</p>
+
+</div>
+
+<div id="a4" class="body-container">
+  <a href="javascript:void(0)" class="title"> 港股市场 </a>
+</div>
+
+<div id="a5" class="body-container">
+  <a href="javascript:void(0)" class="title"> 量化投资 </a>
+</div>
+
+<div id="a6" class="body-container">
+  <a href="javascript:void(0)" class="title"> 量子物理学 </a>
+</div>
+
+<div id="a7" class="body-container">
+  <a href="javascript:void(0)" class="title"> 营销学 </a>
+</div>
+
+<div id="a8" class="body-container">
+  <a href="javascript:void(0)" class="title"> 德州扑克 </a>
+</div>
+
+<div id="a9" class="body-container">
+  <a href="javascript:void(0)" class="title"> 写作创作 </a>
+<p><span style="font-size:18px"><strong>两大策略：</strong></span></p>
+
+<ol>
+	<li>趋势型策略</li>
+	<li>波动型策略</li>
+</ol>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<footer>
+<div class="container">
+<div class="footer-content">
+@Copyright © 2020 匡稻
+</div>
+</div>
+</footer>
+
+</body>
+<html>
